@@ -86,7 +86,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or feedback, feel free to reach out:
 
-- **Hatim Ilyas**: [LinkedIn](https://www.linkedin.com/in/hatim-ilyas/) | [GitHub](https://github.com/HatimIlyas04)
+- **Hatim Ilyas**: [LinkedIn](https://www.linkedin.com/in/ilyass-hatim-8446a1295/) | [GitHub](https://github.com/HatimIlyas04)
 
 ---
 
