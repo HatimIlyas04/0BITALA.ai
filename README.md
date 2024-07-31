@@ -1,8 +1,15 @@
-# React + Vite
+# 0BITALA 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **0BITALA** - an AI-powered job matching platform designed to help you find jobs, improve your CV, and prepare for interviews. Whether you're seeking your next career opportunity, looking to enhance your resume, or need interview preparation tips, **0BITALA** has you covered! 🌟
 
-Currently, two official plugins are available:
+## Features 📋
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **AI-Powered Job Matching** 🤖: Find jobs that match your skills and interests.
+- **CV Improvement** 📄: Get tips and tools to enhance your resume.
+- **Interview Preparation** 🎤: Access resources to help you prepare for interviews.
+- **Networking Space** 🌐: Connect with other professionals and entrepreneurs.
+
+## Project Structure 📂
+
+Here’s a quick overview of the project structure:
+
