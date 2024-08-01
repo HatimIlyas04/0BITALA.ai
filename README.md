@@ -1,4 +1,4 @@
-# 0BITALA 🚀
+# 0.BITALA 🚀
 
 ![0BITALA Logo](src/assets/img/logo0BITALA.png) <!-- Add your logo here -->
 
