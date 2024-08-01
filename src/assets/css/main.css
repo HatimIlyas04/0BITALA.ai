@@ -142,6 +142,8 @@ h6 {
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
+  height: 70px;
+  
 }
 
 .header .logo {
@@ -149,8 +151,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 110px;
   margin-right: 8px;
+  margin-top: 10px;
 }
 
 .header .logo h1 {

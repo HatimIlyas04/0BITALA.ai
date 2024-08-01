@@ -13,13 +13,12 @@ import FaqSection from './components/FaqSection';
 import TeamSection from './components/TeamSection';
 import CallToActionSection from './components/CallToActionSection';
 import ContactSection from './components/ContactSection';
-import Navbar from './components/Navbar';
 import RechercheEmploi from './components/RechercheEmploi'; // Import the component
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="starter-page-page">
       <Header />
       <Routes>
           {/* Define routes */}
