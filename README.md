@@ -1,6 +1,10 @@
 # 0BITALA 🚀
 
+![0BITALA Logo](src/assets/img/logo0BITALA.png) <!-- Add your logo here -->
+
 Welcome to **0BITALA** - an AI-powered job matching platform designed to help you find jobs, improve your CV, and prepare for interviews. Whether you're seeking your next career opportunity, looking to enhance your resume, or need interview preparation tips, **0BITALA** has you covered! 🌟
+
+**0BITALA** is proudly 100% Moroccan! 🇲🇦
 
 ## Features 📋
 
@@ -91,5 +95,3 @@ If you have any questions or feedback, feel free to reach out:
 ---
 
 **0BITALA** is made with ❤️ by [Hatim Ilyas](https://github.com/HatimIlyas04).
-
-
