@@ -33,17 +33,17 @@ const Header = () => {
           </StyledLink>
           <StyledNav id="navmenu" className="navmenu">
             <ul >
-              <li><Link style={{textDecorationLine:'none'}} href="/" className="active">Home</Link></li>
-              <li><Link style={{textDecorationLine:'none'}} href="#about">About Us</Link></li>
-              <li><Link style={{textDecorationLine:'none'}} href="#services">Our Services</Link></li>
-              <li><Link style={{textDecorationLine:'none'}} href="#team">Team</Link></li>
-              <li><Link style={{textDecorationLine:'none'}} href="#contact">Contact Us</Link></li>
+              <li><Link style={{textDecorationLine:'none'}} to="/" className="active">Home</Link></li>
+              <li><Link style={{textDecorationLine:'none'}} to="#about">About Us</Link></li>
+              <li><Link style={{textDecorationLine:'none'}} to="#services">Our Services</Link></li>
+              <li><Link style={{textDecorationLine:'none'}} to="#team">Team</Link></li>
+              <li><Link style={{textDecorationLine:'none'}} to="#contact">Contact Us</Link></li>
               <li className="dropdown">
-                <a style={{textDecorationLine:'none'}} href="#"><span >More</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+                <a style={{textDecorationLine:'none'}} to="#"><span >More</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul className="dropdown-menu">
-                  <li><a style={{textDecorationLine:'none'}} href="#faq">FAQ</a></li>
-                  <li><a style={{textDecorationLine:'none'}} href="#blog">Blog</a></li>
-                  <li><a style={{textDecorationLine:'none'}} href="#resources">Resources</a></li>
+                  <li><a style={{textDecorationLine:'none'}} to="#faq">FAQ</a></li>
+                  <li><a style={{textDecorationLine:'none'}} to="#blog">Blog</a></li>
+                  <li><a style={{textDecorationLine:'none'}} to="#resources">Resources</a></li>
                 </ul>
               </li>
             </ul>
