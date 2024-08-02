@@ -14,13 +14,14 @@ import TeamSection from './components/TeamSection';
 import CallToActionSection from './components/CallToActionSection';
 import ContactSection from './components/ContactSection';
 import RechercheEmploi from './components/RechercheEmploi'; // Import the component
+import OptimisationCV from './components/OptimisationCV'; // Import the OptimisationCV component
 
 function App() {
   return (
     <Router>
       <div className="starter-page-page">
-      <Header />
-      <Routes>
+        <Header />
+        <Routes>
           {/* Define routes */}
           <Route path="/" element={
             <>
@@ -36,6 +37,7 @@ function App() {
             </>
           } />
           <Route path="/service/recherche-emploi" element={<RechercheEmploi />} />
+          <Route path="/service/optimisation-cv" element={<OptimisationCV />} /> {/* New route */}
           {/* Add other routes here */}
         </Routes>
         <Footer />
