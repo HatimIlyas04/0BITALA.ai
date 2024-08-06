@@ -1,4 +1,3 @@
-
 // PreparationEntretien.jsx
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert, Card } from 'react-bootstrap';
@@ -19,6 +18,27 @@ const FormSection = styled.div`
 
 const ResultSection = styled.div`
   margin-top: 2rem;
+`;
+
+// Tailwind utility classes
+const Title = styled.h2`
+  @apply text-3xl font-bold text-gray-800 mb-4;
+`;
+
+const StyledButton = styled(Button)`
+  @apply mt-4 bg-blue-500 text-white hover:bg-blue-600;
+`;
+
+const CardTitle = styled.h5`
+  @apply text-lg font-semibold;
+`;
+
+const CardText = styled.p`
+  @apply text-gray-700;
+`;
+
+const CardSubtitle = styled.h6`
+  @apply text-sm text-gray-500;
 `;
 
 const PreparationEntretien = () => {
@@ -44,11 +64,11 @@ const PreparationEntretien = () => {
       const response = await fetch('https://api.openai.com/v1/completions', {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer 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`,
+          'Authorization': `Bearer YOUR_API_KEY_HERE`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'text-davinci-003', // You can use a different model if preferred
+          model: 'text-davinci-003',
           prompt: `Generate potential interview questions for the position of ${jobTitle}.`,
           max_tokens: 150,
         }),
@@ -79,7 +99,7 @@ const PreparationEntretien = () => {
         <Row>
           <Col md={8} className="mx-auto">
             <FormSection>
-              <h2>Préparation aux Entretiens</h2>
+              <Title>Préparation aux Entretiens</Title>
               <Form onSubmit={handleSubmit}>
                 <Form.Group controlId="formJobTitle">
                   <Form.Label>Titre du Poste</Form.Label>
@@ -90,27 +110,26 @@ const PreparationEntretien = () => {
                     onChange={handleJobTitleChange}
                   />
                 </Form.Group>
-                <Button
-                  variant="primary"
+                <StyledButton
                   type="submit"
                   disabled={loading}
                 >
                   {loading ? 'Préparation en cours...' : 'Générer Entretien'}
-                </Button>
+                </StyledButton>
               </Form>
             </FormSection>
 
             {error && <Alert variant="danger">{error}</Alert>}
             {questions.length > 0 && (
               <ResultSection>
-                <h3>Questions d'Entretien Générées</h3>
+                <h3 className="text-2xl font-bold text-gray-800">Questions d'Entretien Générées</h3>
                 {questions.map((question, index) => (
-                  <Card key={index} className="mb-3">
+                  <Card key={index} className="mb-3 shadow-lg border rounded-lg">
                     <Card.Body>
-                      <Card.Title>Question {index + 1}</Card.Title>
-                      <Card.Text>{question.text}</Card.Text>
-                      <Card.Subtitle className="mb-2 text-muted">Réponse suggérée :</Card.Subtitle>
-                      <Card.Text>{question.answer}</Card.Text>
+                      <CardTitle>Question {index + 1}</CardTitle>
+                      <CardText>{question.text}</CardText>
+                      <CardSubtitle className="mb-2">Réponse suggérée :</CardSubtitle>
+                      <CardText>{question.answer}</CardText>
                     </Card.Body>
                   </Card>
                 ))}
